@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: purple;
+  background-color: deeppink;
 
   ::selection {
     color: black; 
@@ -85,15 +85,15 @@ h1 {
 .spin {
   width: 805px; 
   height: 805px;    
-  background: #f00;
+  background: lime;
   text-align: center;
   padding: 0px;
-  animation: spin 4s infinite linear, blinker 2s linear infinite;
+  animation: spin 1s infinite linear, blinker .1s linear infinite;
 
 
   @include phone-portrait {
     width: 30px; 
-    height: 30px;     
+    height: 30px; 
   }
 }
 
@@ -106,3 +106,26 @@ h1 {
   50% { opacity: 0; }
 }
 
+
+.half {
+  width: 50%;
+  height: 800px;
+  z-index: -1;
+  left: 0;
+/*  margin: 50px;*/
+  background-color: black;
+  position: absolute;
+
+
+}
+
+.penguin {
+  border: 25px solid pink;
+  border-image-source: url(../images/dancing-penguin.gif);
+  border-image-slice: 25 25;
+  border-image-repeat: round;
+}
+
+* {
+  box-sizing: border-box;
+}
