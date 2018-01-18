@@ -17,9 +17,10 @@
 
 body {
   background-color: #280e47;
-  background-image: url(../images/circle.svg);
+  background-image: url(../images/multi-universe.svg);
+  /*background-image: url(../images/circle.svg);*/
   background-repeat: all;
-  background-size: 15px;
+  /*background-size: 15px;*/
 
   ::selection {
     color: black; 
@@ -147,6 +148,12 @@ h1 {
 
 .main-whatever {
   margin-left: 4%;
+}
+
+.main-camo {
+  background-image: url(..images/circle.svg);
+  background-repeat: repeat;
+  background-size: 200px;
 }
 
 .left-bar {
