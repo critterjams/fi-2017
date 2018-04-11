@@ -64,6 +64,7 @@ h1 {
   padding: 50px 20px 10px 20px;
   letter-spacing: -2px;
   text-shadow:-10px 10px black;
+  line-height: 100px;
 
   a {
     text-decoration: none;
@@ -86,6 +87,20 @@ h1 {
   }
 
 }
+
+.fresh {
+    color: black;
+    text-shadow:-10px 10px #2f105b;
+    margin: 0;
+  }
+
+.lg {
+    font-size: 200px;
+    color: #ED008C;
+    margin: 0;
+    text-shadow:-10px 10px #02AEEF;
+    opacity: .9;
+  }
 
 
 .spin {
@@ -124,11 +139,31 @@ h1 {
   height: 800px;
   z-index: -1;
   left: 0;
-/*  margin: 50px;*/
   background-color: black;
   position: absolute;
+  background: repeating-linear-gradient(
+    5deg,
+    #2f105b,
+    #2f105b 5px,
+    black 5px,
+    black 10px
+  );
+}
 
-
+.half-r {
+  width: 50%;
+  height: 800px;
+  z-index: -1;
+  right: 0;
+  background-color: black;
+  position: absolute;
+  background: repeating-linear-gradient(
+    98deg,
+    #2f105b,
+    #2f105b 5px,
+    black 5px,
+    black 10px
+  );
 }
 
 .penguin {
@@ -163,6 +198,13 @@ h1 {
   top: 0;
   position: fixed;
   background-color: #1d043a;
+  background: repeating-linear-gradient(
+    45deg,
+    #2f105b,
+    #2f105b 10px,
+    black 10px,
+    black 20px
+  );
 }
 
 .right-bar {
@@ -172,4 +214,24 @@ h1 {
   top: 0;
   position: fixed;
   background-color: #17052b;
+  background: repeating-linear-gradient(
+    45deg,
+    #2f105b,
+    #2f105b 10px,
+    yellow 10px,
+    yellow 20px
+  );
+}
+
+.pinned {
+    z-index: 10;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
