@@ -78,12 +78,16 @@ h1 {
 
   @include phone-portrait {
     font-size: 28px;
+    line-height: 35px;
+    text-shadow:-3px 3px black;
   }
 
   @include phone-landscape {
     font-size: 24px;
+    line-height: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
+    text-shadow:-3px 3px black;
   }
 
 }
@@ -136,7 +140,7 @@ h1 {
 
 .half {
   width: 50%;
-  height: 800px;
+  height: 200px;
   z-index: -1;
   left: 0;
   background-color: black;
@@ -152,7 +156,7 @@ h1 {
 
 .half-r {
   width: 50%;
-  height: 800px;
+  height: 200px;
   z-index: -1;
   right: 0;
   background-color: black;
